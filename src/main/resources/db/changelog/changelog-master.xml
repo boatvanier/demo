@@ -1,0 +1,14 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+       http://www.liquibase.org/xml/ns/dbchangelog
+       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- Include all change logs -->
+    <include file="db/changelog/init/create-tables.xml"/>
+    <include file="db/changelog/init/init-data.xml"/>
+    <include file="db/changelog/changes/add-image-to-books.xml" />
+    <include file="db/changelog/changes/add-likes-table.xml" />
+
+</databaseChangeLog>
